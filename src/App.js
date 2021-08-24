@@ -8,21 +8,11 @@ import Widgets from './components/Widgets/Widgets/Widgets'
 function App() {
   return (
     <div className="app">
-      {/* Header */}
       <Header />
-
-      {/* App body */}
       <div className="app__body">
-
-        {/* Sidebar */}
-        <Sidebar />
-        
-        {/* Feed */}
+        <Sidebar />        
         <Feed />
-
-        {/* Widgets */}
-        <Widgets />
-    
+        <Widgets />    
       </div>
     </div>
   );

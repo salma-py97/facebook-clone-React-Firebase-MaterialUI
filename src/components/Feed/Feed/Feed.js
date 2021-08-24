@@ -1,10 +1,14 @@
+import StoryReel from '../StoryReel/StoryReel'
+import MessageSender from '../MessageSender/MessageSender'
+import Post from '../Post/Post'
 import './Feed.css'
 
 const Feed = () => {
   return (
     <div className="feed">
-      <h1>Feed</h1>
-      <h1>1:27:16</h1>
+      <StoryReel />
+      <MessageSender />
+      <Post />
     </div>
   )
 }

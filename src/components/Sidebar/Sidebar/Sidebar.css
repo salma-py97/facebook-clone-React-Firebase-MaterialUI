@@ -1,5 +1,6 @@
 .sidebar {
   flex: 0.25;
-  border-right: 2px solid lightgray;
-  height: 100vh;
+  /* border-right: 2px solid lightgray; */
+  min-height: 100vh;
+  padding: 10px;
 }

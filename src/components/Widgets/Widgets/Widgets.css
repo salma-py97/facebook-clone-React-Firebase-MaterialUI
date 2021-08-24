@@ -1,4 +1,4 @@
 .widgets {
-  flex: 0.3;
-  border-left: 2px solid lightgray;
+  flex: 0.25;
+  /* border-left: 2px solid lightgray; */
 }
