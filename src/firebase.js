@@ -11,8 +11,15 @@ const firebaseConfig = {
   measurementId: "G-MYGL1KE708"
 };
 
+// connecting front-end to back-end
 const firebaseApp = firebase.initializeApp(firebaseConfig)
-
+// database
 const db = firebaseApp.firestore()
 
+// auth
+const auth = firebase.auth()
+// provider
+const provider = new firebase.auth.GoogleAuthProvider()
+
+export { auth, provider } 
 export default db

@@ -7,13 +7,17 @@ import MessageSharpIcon from '@material-ui/icons/MessageSharp';
 import StorefrontSharpIcon from '@material-ui/icons/StorefrontSharp';
 import VideoLibrarySharpIcon from '@material-ui/icons/VideoLibrarySharp';
 import ExpandMoreSharpIcon from '@material-ui/icons/ExpandMoreSharp';
-
+import { useStateValue } from '../../../StateProvider';
 
 
 const Sidebar = () => {
+
+  // Pulling user name from auth
+  const [{user}, dispatch] = useStateValue()
+
   return (
     <div className="sidebar">
-        <SidebarRow text="Salma EL BARMAKI" src="https://i.ibb.co/9YcthRy/Female-Developer.jpg" />
+        <SidebarRow text={user.displayName} src={user.photoURL} />
         <SidebarRow text="COVID-19 Information Center" Icon={AddCircleOutlineIcon} />
         <SidebarRow text="Pages" Icon={EmojiFlagsSharpIcon} />
         <SidebarRow text="Friends" Icon={PeopleAltSharpIcon} />
